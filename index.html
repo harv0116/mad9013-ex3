@@ -4,7 +4,7 @@
   <head>
     <meta charset="UTF-8">
     <title>mad9013 - Responsive Layout and Picture Element - Ex 3</title>
-    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+    <link rel="stylesheet" href="" media="screen" type="text/css" />
   </head>
 
   <body>
@@ -16,8 +16,8 @@
   <div class="wrapper">
 
     <section class="col-container clearfix">
-		<article id="column1">    
-            <picture>
+		<article>    
+            <picture id="column1">
                 <source media="(max-width: 400px)" srcset="http://placehold.it/400x400 400w" sizes="33.3vw">
                 <source media="(max-width: 600px)" srcset="http://placehold.it/600x600 600w" sizes="33.3vw">
                 <source media="(max-width: 800px)" srcset="http://placehold.it/400x400 800w" sizes="33.3vw">
@@ -28,9 +28,7 @@
                 <source src="http://placehold.it/600x600">
                 <img src="http://placehold.it/600x600" alt="This picture loads on non-supporting browsers.">
             </picture>
-        </article>
-        <article id="column2">
-            <picture>
+            <picture id="column2">
                 <source media="(max-width: 400px)" srcset="http://placehold.it/400x400 400w" sizes="33.3vw">
                 <source media="(max-width: 600px)" srcset="http://placehold.it/600x600 600w" sizes="33.3vw">
                 <source media="(max-width: 800px)" srcset="http://placehold.it/400x400 800w" sizes="33.3vw">
@@ -41,42 +39,7 @@
                 <source src="http://placehold.it/600x600">  
                 <img src="http://placehold.it/600x600" alt="This picture loads on non-supporting browsers."> 
             </picture> 
-            <picture>
-                <source media="(max-width: 400px)" srcset="http://placehold.it/400x400 400w" sizes="33.3vw">
-                <source media="(max-width: 600px)" srcset="http://placehold.it/600x600 600w" sizes="33.3vw">
-                <source media="(max-width: 800px)" srcset="http://placehold.it/400x400 800w" sizes="33.3vw">
-                <source media="(max-width:1023px)" srcset="http://placehold.it/512x512 1023w" sizes="100.3vw"> 
-          		<source media="(max-width:1024px)" srcset="http://placehold.it/340x340 1024w" sizes="100.3vw">
-              <!-- Anything that doesn't match to condition - Over 1024px will be the image set here -->
-              <!-- That's why you see 340x340 at large displays -->
-                <source src="http://placehold.it/600x600">  
-                <img src="http://placehold.it/600x600" alt="This picture loads on non-supporting browsers."> 
-            </picture>
-        </article>      
-        <article id="column3">
-            <picture>
-                <source media="(max-width: 400px)" srcset="http://placehold.it/400x400 400w" sizes="33.3vw">
-                <source media="(max-width: 600px)" srcset="http://placehold.it/600x600 600w" sizes="33.3vw">
-                <source media="(max-width: 800px)" srcset="http://placehold.it/400x400 800w" sizes="33.3vw">
-                <source media="(max-width:1023px)" srcset="http://placehold.it/512x512 1023w" sizes="100.3vw"> 
-          		<source media="(max-width:1024px)" srcset="http://placehold.it/340x340 1024w" sizes="100.3vw">
-                <!-- Anything that doesn't match to condition - Over 1024px will be the image set here -->
-                <!-- That's why you see 340x340 at large displays -->
-                <source src="http://placehold.it/600x600">
-                <img src="http://placehold.it/600x600" alt="This picture loads on non-supporting browsers."> 
-            </picture>
-            <picture>
-                <source media="(max-width: 400px)" srcset="http://placehold.it/400x400 400w" sizes="33.3vw">
-                <source media="(max-width: 600px)" srcset="http://placehold.it/600x600 600w" sizes="33.3vw">
-                <source media="(max-width: 800px)" srcset="http://placehold.it/400x400 800w" sizes="33.3vw">
-                <source media="(max-width:1023px)" srcset="http://placehold.it/512x512 1023w" sizes="100.3vw"> 
-          		<source media="(max-width:1024px)" srcset="http://placehold.it/340x340 1024w" sizes="100.3vw">
-                <!-- Anything that doesn't match to condition - Over 1024px will be the image set here -->
-                <!-- That's why you see 340x340 at large displays -->
-                <source src="http://placehold.it/600x600">
-                <img src="http://placehold.it/600x600" alt="This picture loads on non-supporting browsers."> 
-            </picture>
-            <picture>
+            <picture id="column3">
                 <source media="(max-width: 400px)" srcset="http://placehold.it/400x400 400w" sizes="33.3vw">
                 <source media="(max-width: 600px)" srcset="http://placehold.it/600x600 600w" sizes="33.3vw">
                 <source media="(max-width: 800px)" srcset="http://placehold.it/400x400 800w" sizes="33.3vw">
