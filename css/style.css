@@ -53,11 +53,11 @@ header{
   }
   #column1 {
   margin: 1rem 0 0 0;
-  visibility: visible;
+  
 	}
 	
 	#column2, #column3 {
-	visibility: hidden;
+	
 	}
 }
 
@@ -68,7 +68,7 @@ header{
   #column1, #column2 {
     float: left;
     width: 49.5%;
-	visibility: visible;
+	
     margin: 0 0 0 1%;
 	overflow: hidden;
   }
@@ -78,7 +78,7 @@ header{
   }
   
   #column3 {
-	  visibility: hidden;
+	  
   }
 
 }
@@ -108,12 +108,12 @@ header{
 @media screen and (min-width: 1025px) {
 
  #column1 {
-	visibility: visible;
+	
 	width: 100%;
   }
   
   #column2, #column3 {
-  	visibility: hidden;
+  	
   }
 }
 
