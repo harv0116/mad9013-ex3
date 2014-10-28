@@ -14,107 +14,92 @@ html {
   clear: both;
 }
 
-/* ------- Baseline Elements ------ */
-/* -------------------------------- */
 body {
-  font-family: sans-serif;
-  line-height: 1.5;
+	padding: 0;
+	margin: 0;
+}
+.col-container {
+	outline: 1px solid red;
+	padding: 0;
+	margin: 0 auto;
 }
 
-p {
-  font-family: georgia;
-  line-height: 1.75;
+.col-container div {
+	outline: 1px solid blue;
+	padding: 0;
+	width: 100%;
+	overflow: hidden;
 }
 
-.wrapper {
-  padding: 2%;
-  margin: 0 auto;
-}
-
-
-
-/* ------------ Header ------------ */
-/* -------------------------------- */
-header{
-  text-align: center;
-  margin-top: 2rem
+picture img{
+	max-width: 100%;
 }
 
 
 
-/* ------------- Grid ------------- */
-/* -------------------------------- */
-
-/*  ---- 1 column --------- */
-
-@media screen and (max-width: 600px) {
-  .col-container {
-    margin: 1rem 0;
-  }
-  #column1 {
-  margin: 1rem 0 0 0;
-  
+@media screen and (min-width: 400px) {
+	.col-container {		
+		max-width: 400px;
 	}
 	
-	#column2, #column3 {
-	
+	.col-container div {	
+		float: left;
+		width: 400px;
+		height: 400px;
+		
 	}
 }
 
-/* -- 2 Columns -- */
-
-@media screen and (max-width: 1023px) {
-
-  #column1, #column2 {
-    float: left;
-    width: 49.5%;
+@media screen and (min-width: 600px) {
+	.col-container {
+		max-width: 600px;
+	}
 	
-    margin: 0 0 0 1%;
-	overflow: hidden;
-  }
-
-  #column1 {
-    margin-left: 0;
-  }
-  
-  #column3 {
-	  
-  }
-
+	.col-container div {	
+		float: left;
+		width: 300px;
+		height: 300px;
+		
+	}
 }
 
-
-/* -- 3 columns  -- */
-
-@media screen and (min-width: 1024px and max-width: 1024px) {
-
-  #column1, #column2, #column3 {
-    
-	visibility: visible;
-    width: 32.66%;
-	overflow: hidden;
-	float: left;
-    margin: 0 0 0 1%;
-  }
-
-  #column1 {
-    margin-left: 0;
-  }
-
+@media screen and (min-width: 800px) {
+	.col-container {
+		max-width: 800px;
+	}
+	
+	.col-container div {	
+		float: left;
+		width: 400px;
+		height: 400px;
+		
+	}
 }
 
-
+@media screen and (min-width: 1024px) {
+	.col-container {
+		max-width: 1024px;
+	}
+	
+	.col-container div {	
+		float: left;
+		width: 512px;
+		height: 512px;
+		
+	}
+}
 
 @media screen and (min-width: 1025px) {
-
- #column1 {
+	.col-container {
+		max-width: 1024px;
+	}
 	
-	width: 100%;
-  }
-  
-  #column2, #column3 {
-  	
-  }
+	.col-container div {	
+		float: left;
+		width: 340px;
+		height: 340px;
+		
+	}
 }
 
 
@@ -124,6 +109,5 @@ header{
 .footer {
   background: #111;
   text-align: center;
-  clear:both;
   color: #fff;
 }
